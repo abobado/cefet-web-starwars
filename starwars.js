@@ -30,7 +30,7 @@ $.ajax({
     films.forEach(film => {
       let $li = $("<li>", {
         "data-url-episode": film.url,
-        text: "Episode " + id2episode(film.episode_id)
+        text: "Episode " + id2episode(film.episode_id) + " : " + film.title
       });
 
       $ul.append($li);
