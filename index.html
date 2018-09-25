@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Star Wars Intros</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="shortcut icon" href="imgs/favicon.png">
-  </head>
-  <body>
-    <nav id="movies">
-      <ul>
-        <li data-episode-url="http://swapi.co/api/films/4/">Episode I</li>
-        <li data-episode-url="http://swapi.co/api/films/5/">Episode II</li>
-        <li data-episode-url="http://swapi.co/api/films/.../">Episode ...</li>
-      </ul>
-    </nav>
 
-    <div class="container">
-      <div class="flow">
-        <pre class="reading-animation">
+<head>
+  <meta charset="utf-8">
+  <title>Star Wars Intros</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="shortcut icon" href="imgs/favicon.png">
+</head>
+
+<body>
+  <nav id="movies">
+    <ul>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="flow">
+      <pre class="reading-animation">
           Episode I
           THE PHANTOM MENACE
 
@@ -43,10 +42,17 @@
           people and restore
           freedom to the galaxy....
         </pre>
-      </div>
     </div>
+  </div>
 
-    <script src="starwars.js" charset="utf-8"></script>
-    <script src="restart-animation.js" charset="utf-8"></script>
-  </body>
+  <audio controls autoplay>
+    <source src="https://archive.org/download/StarWarsThemeSongByJohnWilliams/Star%20Wars%20Theme%20Song%20By%20John%20Williams.mp3"
+      type="audio/mpeg"> Your browser does not support the audio element.
+  </audio>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="starwars.js" charset="utf-8"></script>
+  <script src="restart-animation.js" charset="utf-8"></script>
+</body>
+
 </html>
